@@ -91,6 +91,7 @@ nslookup networkwalks.com
 **Purpose:** Query DNS and retrieve available name resolution information.
 
 **Evidence – Nslookup**
+
 <img width="840" height="349" alt="nslookup.png" src="https://github.com/user-attachments/assets/63755be6-072d-4cb5-8c4e-358152c94912" />
 
 
