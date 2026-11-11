@@ -1,9 +1,10 @@
 # NETWORKWALKS CYBERSECURITY INTERNSHIP — BATCH B084
+
 # WEEK 2: FOOTPRINTING, RECONNAISSANCE & NETWORK SCANNING REPORT
 
-**Prepared by:** Samuel Miracle  
-**Programme:** NetworkWalks Cybersecurity Internship  
-**Batch:** B084  
+**Prepared by:** Samuel Miracle
+**Programme:** NetworkWalks Cybersecurity Internship
+**Batch:** B084
 **Practical Exercises:** W2-PM1 and W2-PM5
 
 ---
@@ -29,17 +30,17 @@ The exercises provided hands-on experience with commonly used cybersecurity tool
 
 ## 3. TOOLS USED
 
-| Tool | Purpose |
-|---|---|
-| Kali Linux | Testing environment |
-| WHOIS | Domain registration information |
-| WhatWeb | Web technology identification |
-| Nslookup | DNS information gathering |
-| cURL | HTTP response header inspection |
-| WAFW00F | Web Application Firewall detection |
-| DNSRecon | DNS enumeration |
-| Zenmap | Graphical network scanning interface |
-| Nmap | Network discovery and scanning |
+| Tool                   | Purpose                                  |
+| ---------------------- | ---------------------------------------- |
+| Kali Linux             | Testing environment                      |
+| WHOIS                  | Domain registration information          |
+| WhatWeb                | Web technology identification            |
+| Nslookup               | DNS information gathering                |
+| cURL                   | HTTP response header inspection          |
+| WAFW00F                | Web Application Firewall detection       |
+| DNSRecon               | DNS enumeration                          |
+| Zenmap                 | Graphical network scanning interface     |
+| Nmap                   | Network discovery and scanning           |
 | Windows Command Prompt | Network configuration and ARP inspection |
 
 ## 4. ACTIVITIES PERFORMED
@@ -50,7 +51,7 @@ The exercises provided hands-on experience with commonly used cybersecurity tool
 
 The following tools were used to gather information about the specified domain.
 
-#### 4.1.1 WHOIS Lookup
+#### 4.1.1 WHOIS networkwalks.com
 
 **Command:**
 
@@ -60,9 +61,9 @@ whois networkwalks.com
 
 **Purpose:** Retrieve available domain registration information.
 
-**Evidence – WHOIS Lookup**
+**Evidence – WHOIS&#x20;**&#x6E;etworkwalks.com
 
-![WHOIS Evidence](evidence/W2-PM1/01-whois.png)
+
 
 *Insert WHOIS screenshot here.*
 
@@ -78,7 +79,7 @@ whatweb https://networkwalks.com
 
 **Evidence – WhatWeb**
 
-![WhatWeb Evidence](evidence/W2-PM1/02-whatweb.png)
+
 
 *Insert WhatWeb screenshot here.*
 
@@ -94,7 +95,7 @@ nslookup networkwalks.com
 
 **Evidence – Nslookup**
 
-![Nslookup Evidence](evidence/W2-PM1/03-nslookup.png)
+
 
 *Insert Nslookup screenshot here.*
 
@@ -108,9 +109,9 @@ curl -I https://networkwalks.com
 
 **Purpose:** Retrieve HTTP response headers and inspect information returned by the web server.
 
-**Evidence – cURL**
+**Evidence – curl -I**
 
-![cURL Evidence](evidence/W2-PM1/04-curl.png)
+
 
 *Insert cURL screenshot here.*
 
@@ -126,7 +127,7 @@ wafw00f https://networkwalks.com
 
 **Evidence – WAFW00F**
 
-![WAFW00F Evidence](evidence/W2-PM1/05-wafw00f.png)
+
 
 *Insert WAFW00F screenshot here.*
 
@@ -140,9 +141,9 @@ dnsrecon -d networkwalks.com
 
 **Purpose:** Gather additional DNS-related information about the specified domain.
 
-**Evidence – DNSRecon**
+**Evidence – dnsrecon -d**
 
-![DNSRecon Evidence](evidence/W2-PM1/06-dnsrecon.png)
+
 
 *Insert DNSRecon screenshot here.*
 
@@ -168,12 +169,12 @@ ipconfig
 
 **Network Details:**
 
-| Parameter | Value |
-|---|---|
-| Local IPv4 Address | `192.168.34.115` |
-| Subnet Mask | `255.255.255.0` |
-| Default Gateway | `192.168.34.148` |
-| Network Range | `192.168.34.0/24` |
+| Parameter          | Value             |
+| ------------------ | ----------------- |
+| Local IPv4 Address | `192.168.34.115`  |
+| Subnet Mask        | `255.255.255.0`   |
+| Default Gateway    | `192.168.34.148`  |
+| Network Range      | `192.168.34.0/24` |
 
 #### 4.2.2 Initial Network Discovery
 
@@ -201,7 +202,7 @@ nmap -sn 192.168.34.148
 
 **Evidence – Gateway Scan**
 
-![Gateway Scan](evidence/W2-PM5/07-zenmap-gateway-scan.png)
+
 
 *Insert gateway scan screenshot here.*
 
@@ -215,7 +216,7 @@ nmap -sn 192.168.34.115
 
 **Evidence – Local Computer Scan**
 
-![Local Computer Scan](evidence/W2-PM5/08-zenmap-local-host-scan.png)
+
 
 *Insert local computer scan screenshot here.*
 
@@ -231,14 +232,14 @@ nmap -sn 192.168.34.115 192.168.34.148
 
 Both hosts were reported as up and appeared in the Zenmap Hosts tab.
 
-| IP Address | Device | Status |
-|---|---|---|
-| `192.168.34.115` | Local Windows computer | Up |
-| `192.168.34.148` | Default gateway | Up |
+| IP Address       | Device                 | Status |
+| ---------------- | ---------------------- | ------ |
+| `192.168.34.115` | Local Windows computer | Up     |
+| `192.168.34.148` | Default gateway        | Up     |
 
 **Evidence – Combined Scan**
 
-![Combined Hosts Scan](evidence/W2-PM5/11-zenmap-combined-hosts.png)
+
 
 *Insert combined Hosts tab screenshot here.*
 
@@ -254,15 +255,15 @@ arp -a
 
 The output contained the following dynamic entry:
 
-| IP Address | MAC Address | Type |
-|---|---|---|
+| IP Address       | MAC Address         | Type    |
+| ---------------- | ------------------- | ------- |
 | `192.168.34.148` | `7e-2b-88-8b-02-51` | Dynamic |
 
 This identified the MAC address associated with the default gateway in the local ARP table.
 
 **Evidence – ARP Table**
 
-![ARP Table](evidence/W2-PM5/09-arp-mac-address.png)
+
 
 *Insert ARP table screenshot here.*
 
@@ -285,7 +286,7 @@ The following simplified diagram represents the two verified devices and their n
 
 **Evidence – Zenmap Topology View**
 
-![Zenmap Topology](evidence/W2-PM5/10-zenmap-topology.png)
+
 
 *Insert Zenmap topology screenshot here.*
 
@@ -338,29 +339,29 @@ All screenshots and supporting files are organised under the repository's `evide
 
 ### W2-PM1 – Footprinting & Reconnaissance
 
-| No. | Evidence | Screenshot |
-|---|---|---|
-| 01 | WHOIS lookup | [View](evidence/W2-PM1/01-whois.png) |
-| 02 | WhatWeb scan | [View](evidence/W2-PM1/02-whatweb.png) |
-| 03 | Nslookup results | [View](evidence/W2-PM1/03-nslookup.png) |
-| 04 | cURL response headers | [View](evidence/W2-PM1/04-curl.png) |
-| 05 | WAFW00F results | [View](evidence/W2-PM1/05-wafw00f.png) |
-| 06 | DNSRecon results | [View](evidence/W2-PM1/06-dnsrecon.png) |
+| No. | Evidence              | Screenshot                              |
+| --- | --------------------- | --------------------------------------- |
+| 01  | WHOIS lookup          | [View](evidence/W2-PM1/01-whois.png)    |
+| 02  | WhatWeb scan          | [View](evidence/W2-PM1/02-whatweb.png)  |
+| 03  | Nslookup results      | [View](evidence/W2-PM1/03-nslookup.png) |
+| 04  | cURL response headers | [View](evidence/W2-PM1/04-curl.png)     |
+| 05  | WAFW00F results       | [View](evidence/W2-PM1/05-wafw00f.png)  |
+| 06  | DNSRecon results      | [View](evidence/W2-PM1/06-dnsrecon.png) |
 
 ### W2-PM5 – Network Scanning with Zenmap
 
-| No. | Evidence | Screenshot / File |
-|---|---|---|
-| 07 | Gateway scan | [View](evidence/W2-PM5/07-zenmap-gateway-scan.png) |
-| 08 | Local computer scan | [View](evidence/W2-PM5/08-zenmap-local-host-scan.png) |
-| 09 | ARP table | [View](evidence/W2-PM5/09-arp-mac-address.png) |
-| 10 | Initial topology | [View](evidence/W2-PM5/10-zenmap-topology.png) |
-| 11 | Combined Hosts tab | [View](evidence/W2-PM5/11-zenmap-combined-hosts.png) |
-| 12 | Saved scan results | [View](evidence/W2-PM5/W2-PM5-combined-scan.xml) |
+| No. | Evidence            | Screenshot / File                                     |
+| --- | ------------------- | ----------------------------------------------------- |
+| 07  | Gateway scan        | [View](evidence/W2-PM5/07-zenmap-gateway-scan.png)    |
+| 08  | Local computer scan | [View](evidence/W2-PM5/08-zenmap-local-host-scan.png) |
+| 09  | ARP table           | [View](evidence/W2-PM5/09-arp-mac-address.png)        |
+| 10  | Initial topology    | [View](evidence/W2-PM5/10-zenmap-topology.png)        |
+| 11  | Combined Hosts tab  | [View](evidence/W2-PM5/11-zenmap-combined-hosts.png)  |
+| 12  | Saved scan results  | [View](evidence/W2-PM5/W2-PM5-combined-scan.xml)      |
 
 ---
 
-**Prepared by:** Samuel Miracle  
+**Prepared by:** Samuel Miracle
 **NetworkWalks Cybersecurity Internship — Batch B084**
 
 *Learning through practical exercises, documenting findings, and building cybersecurity skills.*
