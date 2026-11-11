@@ -318,33 +318,6 @@ Using Zenmap and Nmap, I identified my local network range, performed host disco
 
 The exercises reinforced the importance of selecting appropriate tools, interpreting their outputs carefully, and validating findings before documenting them in a cybersecurity assessment.
 
-## 8. EVIDENCES COLLECTED
-
-All screenshots and supporting files are organised under the repository's `evidence/` directory.
-
-### W2-PM1 – Footprinting & Reconnaissance
-
-| No. | Evidence              | Screenshot                              |
-| --- | --------------------- | --------------------------------------- |
-| 01  | WHOIS lookup          | [View](evidence/W2-PM1/01-whois.png)    |
-| 02  | WhatWeb scan          | [View](evidence/W2-PM1/02-whatweb.png)  |
-| 03  | Nslookup results      | [View](evidence/W2-PM1/03-nslookup.png) |
-| 04  | cURL response headers | [View](evidence/W2-PM1/04-curl.png)     |
-| 05  | WAFW00F results       | [View](evidence/W2-PM1/05-wafw00f.png)  |
-| 06  | DNSRecon results      | [View](evidence/W2-PM1/06-dnsrecon.png) |
-
-### W2-PM5 – Network Scanning with Zenmap
-
-| No. | Evidence            | Screenshot / File                                     |
-| --- | ------------------- | ----------------------------------------------------- |
-| 07  | Gateway scan        | [View](evidence/W2-PM5/07-zenmap-gateway-scan.png)    |
-| 08  | Local computer scan | [View](evidence/W2-PM5/08-zenmap-local-host-scan.png) |
-| 09  | ARP table           | [View](evidence/W2-PM5/09-arp-mac-address.png)        |
-| 10  | Initial topology    | [View](evidence/W2-PM5/10-zenmap-topology.png)        |
-| 11  | Combined Hosts tab  | [View](evidence/W2-PM5/11-zenmap-combined-hosts.png)  |
-| 12  | Saved scan results  | [View](evidence/W2-PM5/W2-PM5-combined-scan.xml)      |
-
----
 
 **Prepared by:** Samuel Miracle
 **NetworkWalks Cybersecurity Internship — Batch B084**
