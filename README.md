@@ -63,9 +63,8 @@ whois networkwalks.com
 
 **Evidence – WHOIS&#x20;**&#x6E;etworkwalks.com
 
+<img width="1600" height="817" alt="Whois.png" src="https://github.com/user-attachments/assets/51ef9341-e788-4e02-a2f1-efec720dd28e" />
 
-
-*Insert WHOIS screenshot here.*
 
 #### 4.1.2 Web Technology Identification
 
@@ -78,10 +77,8 @@ whatweb https://networkwalks.com
 **Purpose:** Identify technologies and web components exposed by the website.
 
 **Evidence – WhatWeb**
+<img width="1600" height="386" alt="Whatweb.png Image" src="https://github.com/user-attachments/assets/4616c9ae-0e62-41c2-bc63-75b82167d50a" />
 
-
-
-*Insert WhatWeb screenshot here.*
 
 #### 4.1.3 DNS Lookup
 
@@ -94,10 +91,8 @@ nslookup networkwalks.com
 **Purpose:** Query DNS and retrieve available name resolution information.
 
 **Evidence – Nslookup**
+<img width="840" height="349" alt="nslookup.png" src="https://github.com/user-attachments/assets/63755be6-072d-4cb5-8c4e-358152c94912" />
 
-
-
-*Insert Nslookup screenshot here.*
 
 #### 4.1.4 HTTP Response Header Inspection
 
@@ -110,10 +105,8 @@ curl -I https://networkwalks.com
 **Purpose:** Retrieve HTTP response headers and inspect information returned by the web server.
 
 **Evidence – curl -I**
+<img width="1597" height="375" alt="curl.png" src="https://github.com/user-attachments/assets/13b0119e-5ab2-4596-a28c-16b95681f56c" />
 
-
-
-*Insert cURL screenshot here.*
 
 #### 4.1.5 Web Application Firewall Detection
 
@@ -126,10 +119,8 @@ wafw00f https://networkwalks.com
 **Purpose:** Check for indications of Web Application Firewall protection.
 
 **Evidence – WAFW00F**
+<img width="1128" height="614" alt="Wafw00f.png" src="https://github.com/user-attachments/assets/5dcb36f7-d073-44ec-aac8-daa06ef63a39" />
 
-
-
-*Insert WAFW00F screenshot here.*
 
 #### 4.1.6 DNS Enumeration
 
@@ -142,10 +133,8 @@ dnsrecon -d networkwalks.com
 **Purpose:** Gather additional DNS-related information about the specified domain.
 
 **Evidence – dnsrecon -d**
+<img width="1041" height="289" alt="dns.png" src="https://github.com/user-attachments/assets/9a2494ae-d7c2-4d1c-a2b7-000e14e7ed31" />
 
-
-
-*Insert DNSRecon screenshot here.*
 
 **Observations:**
 
@@ -197,6 +186,7 @@ To verify the known devices, I performed individual scans.
 ```bash
 nmap -sn 192.168.34.148
 ```
+<img width="1598" height="800" alt="scan.png" src="https://github.com/user-attachments/assets/684edfe3-e2ba-40b0-a32d-b0e204872a5b" />
 
 **Result:** Host reported as up.
 
@@ -204,7 +194,8 @@ nmap -sn 192.168.34.148
 
 
 
-*Insert gateway scan screenshot here.*
+<img width="1598" height="800" alt="default.png" src="https://github.com/user-attachments/assets/56e67c45-41b6-44b8-aa61-f74957f042d4" />
+
 
 **Local Windows Computer:**
 
@@ -215,10 +206,8 @@ nmap -sn 192.168.34.115
 **Result:** Host reported as up.
 
 **Evidence – Local Computer Scan**
+<img width="1597" height="806" alt="local.png" src="https://github.com/user-attachments/assets/612e1b31-dd09-4c04-8669-7414872ee74f" />
 
-
-
-*Insert local computer scan screenshot here.*
 
 #### 4.2.4 Combined Host Discovery
 
@@ -239,9 +228,8 @@ Both hosts were reported as up and appeared in the Zenmap Hosts tab.
 
 **Evidence – Combined Scan**
 
+<img width="1600" height="816" alt="combined.png" src="https://github.com/user-attachments/assets/9d764c36-18b0-4d0a-aa9b-0308292631be" />
 
-
-*Insert combined Hosts tab screenshot here.*
 
 #### 4.2.5 MAC Address Identification
 
@@ -262,10 +250,8 @@ The output contained the following dynamic entry:
 This identified the MAC address associated with the default gateway in the local ARP table.
 
 **Evidence – ARP Table**
+<img width="1348" height="460" alt="arp.png" src="https://github.com/user-attachments/assets/b40b66b9-7dfd-4ab2-a275-69cf824aa7f4" />
 
-
-
-*Insert ARP table screenshot here.*
 
 #### 4.2.6 Network Topology Inspection
 
@@ -285,10 +271,8 @@ The following simplified diagram represents the two verified devices and their n
 ```
 
 **Evidence – Zenmap Topology View**
+<img width="1416" height="613" alt="zenmap.png" src="https://github.com/user-attachments/assets/faca7291-a8a7-4301-a52d-8c1b330b3011" />
 
-
-
-*Insert Zenmap topology screenshot here.*
 
 The combined scan was also saved in XML format for record keeping.
 
