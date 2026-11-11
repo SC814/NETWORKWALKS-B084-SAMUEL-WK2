@@ -3,6 +3,7 @@
 # WEEK 2: FOOTPRINTING, RECONNAISSANCE & NETWORK SCANNING REPORT
 
 **Prepared by:** Samuel Miracle
+
 **Programme:** NetworkWalks Cybersecurity Internship
 **Batch:** B084
 **Practical Exercises:** W2-PM1 and W2-PM5
